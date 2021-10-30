@@ -29,7 +29,7 @@ class Convertor:
 
         #https://min-api.cryptocompare.com/data/price?fsym=EUR&tsyms=RUB - рабочий сайт с API
 
-        r = requests.get(f"https://min-api.cryptocompare.com/data/price?fsym={base_key}&symbols={sym_key}")
+        r = requests.get(f"https://min-api.cryptocompare.com/data/price?fsym={sym_key}&symbols={base_key}")
 
         resp = json.loads(r.content)
 
